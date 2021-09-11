@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=DM+Mono" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniel Ziorli | Software Engineer</title>
+
+		
+
+		<link rel="modulepreload" href="/_app/start-d9566b06.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-a0fea651.js">
+		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-499d9ad5.js">
+		<link rel="modulepreload" href="/_app/pages/test.svelte-5177de6c.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-9d1a26df.css">
+
+		<script type="module">
+			import { start } from "/_app/start-d9566b06.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-499d9ad5.js"),
+						import("/_app/pages/test.svelte-5177de6c.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/test",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      overflow-x: hidden;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      background-color: var(--background-color, #0e0e0e);
+      color: var(--text-color, #fff);
+      letter-spacing: 0.01em;
+      font-family: 'DM Mono';
+
+    }
+
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: #7952b3 #0e0e0e;
+    }
+
+    body::-webkit-scrollbar {
+      width: 0.25rem;
+      height: 0;
+    }
+
+    body::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background-color: #7952b3;
+    }
+
+    @media only screen and (max-width: 660px) {
+      body::-webkit-scrollbar-thumb {
+        background-color: var(--background-color);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="svelte">
+
+
+
+
+<div class="desktop-nav svelte-1ds7il0"><nav class="svelte-1ds7il0"><a href="/#home" class="left svelte-1ds7il0"><h1 class="svelte-1ds7il0">DZ</h1></a>
+    <a href="/#about" class="svelte-1ds7il0"><h1 class="svelte-1ds7il0">ABOUT</h1></a>
+    <a href="/#projects" class="svelte-1ds7il0"><h1 class="svelte-1ds7il0">PROJECTS</h1></a>
+    <a href="/#experience" class="svelte-1ds7il0"><h1 class="svelte-1ds7il0">EXPERIENCE</h1></a>
+    <a href="/#contact" class="svelte-1ds7il0"><h1 class="svelte-1ds7il0">CONTACT</h1></a></nav></div>
+
+<div class="mobile-nav svelte-1ds7il0"><div class="hamberger-icon svelte-1ds7il0"><i class="fas fa-align-justify fa-2x"></i></div>
+  <div class="mobile-menu open svelte-1ds7il0"><a href="/#home" class="svelte-1ds7il0"><div class="mobile-button svelte-1ds7il0"><h1 class="svelte-1ds7il0">HOME</h1></div></a>
+    <a href="/#about" class="svelte-1ds7il0"><div class="mobile-button svelte-1ds7il0"><h1 class="svelte-1ds7il0">ABOUT</h1></div></a>
+    <a href="/#projects" class="svelte-1ds7il0"><div class="mobile-button svelte-1ds7il0"><h1 class="svelte-1ds7il0">PROJECTS</h1></div></a>
+    <a href="/#experience" class="svelte-1ds7il0"><div class="mobile-button svelte-1ds7il0"><h1 class="svelte-1ds7il0">EXPERIENCE</h1></div></a>
+    <a href="/#contact" class="svelte-1ds7il0"><div class="mobile-button svelte-1ds7il0"><h1 class="svelte-1ds7il0">CONTACT</h1></div></a></div>
+</div>
+<h1>test 123
+</h1>
+
+
+
+			
+		</div>
+</body>
+
+</html>
