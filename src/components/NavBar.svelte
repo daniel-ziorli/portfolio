@@ -42,9 +42,9 @@
 <div class="desktop-nav">
   <nav>
     <a href="/#home" class="left"><h1>DZ</h1></a>
+    <a href="/#about"><h1>ABOUT</h1></a>
     <a href="/#projects"><h1>PROJECTS</h1></a>
     <a href="/#experience"><h1>EXPERIENCE</h1></a>
-    <a href="/#about"><h1>ABOUT</h1></a>
     <a href="/#contact"><h1>CONTACT</h1></a>
   </nav>
 </div>
@@ -63,6 +63,11 @@
         <h1>HOME</h1>
       </div>
     </a>
+    <a href="/#about">
+      <div class="mobile-button">
+        <h1>ABOUT</h1>
+      </div>
+    </a>
     <a href="/#projects">
       <div class="mobile-button">
         <h1>PROJECTS</h1>
@@ -71,11 +76,6 @@
     <a href="/#experience">
       <div class="mobile-button">
         <h1>EXPERIENCE</h1>
-      </div>
-    </a>
-    <a href="/#about">
-      <div class="mobile-button">
-        <h1>ABOUT</h1>
       </div>
     </a>
     <a href="/#contact">
@@ -127,7 +127,7 @@
     max-height: 0;
     max-width: 0;
     overflow: hidden;
-    border: 1px solid white;
+    border: 2px solid white;
     background-color: var(--background-color, black);
     transition: max-height 0.6s ease-in-out, max-width 0.3s ease-in-out;
     visibility: hidden;

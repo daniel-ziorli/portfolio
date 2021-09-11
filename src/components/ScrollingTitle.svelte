@@ -22,7 +22,8 @@
     padding-right: 2rem;
 
     color: var(--background-color);
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: 1px white;
+    font-weight: normal !important;
     text-transform: uppercase;
     word-spacing: 2rem;
     font-size: 4rem;
