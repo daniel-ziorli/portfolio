@@ -6,11 +6,12 @@ const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
 	preprocess: sveltePreprocess(),
+	basepath: '/portfolio/',
 	kit: {
 		target: '#svelte',
 		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
+			pages: 'public',
+			assets: 'public',
 			fallback: null
 		})
 	}
