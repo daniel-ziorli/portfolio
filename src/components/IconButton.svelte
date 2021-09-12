@@ -1,21 +1,22 @@
 <script lang="ts">
-    export let size = 32;
-    export let src;
-    export let alt = "button";
-    export let href;
-    export let newTab = false;
+  export let size = 48;
+  export let padding = "10px";
+  export let src;
+  export let alt = 'button';
+  export let href;
+  export let newTab = false;
 </script>
 
-<a href={href} target="{newTab === true ? "target=_blank" : ""}" rel="noopener noreferrer">
-    <img src={src} alt={alt} width={size} height={size}>
-</a>
+<div style="padding: {padding}; width={size}; height={size};">
+  <a {href} target={newTab === true ? 'target=_blank' : ''} rel="noopener noreferrer">
+    <img {src} {alt} width={size} height={size} />
+  </a>
+</div>
 
 
 <style>
-
-    a {
-        width: 100%;
-        height: 100%;
-
-    }
+  a {
+    width: 100%;
+    height: 100%;
+  }
 </style>

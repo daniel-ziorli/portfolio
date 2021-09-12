@@ -5,37 +5,41 @@
   import CardContainer from '../components/CardContainer.svelte';
   import ScrollingTitle from '../components/ScrollingTitle.svelte';
   import Blink from '../components/Blink.svelte';
-  import GridContainer from '../components/GridContainer.svelte'
+  import GridContainer from '../components/GridContainer.svelte';
 
   let workExperience = [
     {
       title: 'Orion',
-      description: 'Used python and Arbor Ddos protection technology to create comprehensive email alerts and reports.',
+      description:
+        'Used python and Arbor Ddos protection technology to create comprehensive email alerts and reports.',
       href: '/orion',
       date: 'MAY 2019 - AUG 2019',
       pills: ['python', 'matplotlib', 'tensorflow', 'numpy']
     },
     {
       title: 'TD Lab',
-      description: 'Worked as a full stack developer to create various prototypes such as a student investment app.',
+      description:
+        'Worked as a full stack developer to create various prototypes such as a student investment app.',
       href: '/td',
       date: 'SEP 2019 - DEC 2019',
       pills: ['flutter', 'react', 'firebase']
     },
     {
       title: 'WSIB',
-      description: 'Created a flutter app for scheduling in person meetings and contact trace employees who participated.',
+      description:
+        'Created a flutter app for scheduling in person meetings and contact trace employees who participated.',
       href: '/wsib',
       date: 'MAY 2020 - AUG 2020',
       pills: ['react', 'aws', 'flutter']
     },
     {
       title: 'Tulip',
-      description: 'Developed tooling to creating and managing docker based applications and tooling for creating and managing client infrastructure.',
+      description:
+        'Developed tooling to creating and managing docker based applications and tooling for creating and managing client infrastructure.',
       href: '/tulip',
       date: 'MAY 2021 - AUG 2021',
       pills: ['golang', 'GCP', 'docker', 'grafana', 'terraform']
-    },
+    }
   ];
 
   let projects = [
@@ -66,8 +70,7 @@
       href: '/tulip',
       src: '/giphy.gif',
       pills: ['golang', 'GCP', 'docker', 'grafana', 'terraform']
-    },
-
+    }
   ];
 </script>
 
@@ -80,15 +83,21 @@
   <div class="content about">
     <div class="about-header">
       <h1 style="align-self: left; margin-right: auto;">ABOUT<Blink>_</Blink></h1>
-      <div class="social-button">
-        <IconButton href="https://github.com/daniel-ziorli" src="icons/github.png" size={42} newTab={true}/>
-      </div>
-      <div class="social-button">
-        <IconButton href="https://www.youtube.com/channel/UC9MyKPOkIZkxSiRsxwJbj8Q" src="icons/youtube.png" size={42} newTab={true}/>
-      </div>
-      <div class="social-button">
-        <IconButton href="https://www.linkedin.com/in/daniel-ziorli-2443bb164" src="icons/linkedin.png" size={42} newTab={true}/>
-      </div>
+      <IconButton 
+        href="https://github.com/daniel-ziorli"
+        src="icons/github.png" 
+        newTab={true}
+      />
+      <IconButton
+        href="https://www.youtube.com/channel/UC9MyKPOkIZkxSiRsxwJbj8Q"
+        src="icons/youtube.png"
+        newTab={true}
+      />
+      <IconButton
+        href="https://www.linkedin.com/in/daniel-ziorli-2443bb164"
+        src="icons/linkedin.png"
+        newTab={true}
+      />
     </div>
     <p>
       Hello! My name is Daniel and I enjoy solving problems with tech. My interest in programming
@@ -102,25 +111,22 @@
     </p>
   </div>
 </div>
-<Wave svg="waves/black-purple.svg" flip={true}/>
+<Wave svg="waves/black-purple.svg" flip={true} />
 
 <div id="projects" />
 <ScrollingTitle margin="3rem" text="Projects " />
 
 <div style="display: flex; justify-content:center;  width:100%">
-  <GridContainer tiles={projects}/>
+  <GridContainer tiles={projects} />
 </div>
 
 <div id="experience" />
 <ScrollingTitle margin="3rem" text="Experience " />
-<div style="display: flex; justify-content:center; align-items: center; margin-right: auto; margin-left: auto; width:100%">
-  <CardContainer cards={workExperience}/>
+<div
+  style="display: flex; justify-content:center; align-items: center; margin-right: auto; margin-left: auto; width:100%"
+>
+  <CardContainer cards={workExperience} />
 </div>
-
-
-
-
-
 
 <style>
   .content {
@@ -155,11 +161,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-  }
-
-  .social-button {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 
   .light-text {
