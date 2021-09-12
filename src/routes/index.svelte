@@ -5,36 +5,69 @@
   import CardContainer from '../components/CardContainer.svelte';
   import ScrollingTitle from '../components/ScrollingTitle.svelte';
   import Blink from '../components/Blink.svelte';
+  import GridContainer from '../components/GridContainer.svelte'
 
   let workExperience = [
     {
       title: 'Orion',
       description: 'Used python and Arbor Ddos protection technology to create comprehensive email alerts and reports.',
-      href: '/test',
+      href: '/orion',
       date: 'MAY 2019 - AUG 2019',
       pills: ['python', 'matplotlib', 'tensorflow', 'numpy']
     },
     {
       title: 'TD Lab',
       description: 'Worked as a full stack developer to create various prototypes such as a student investment app.',
-      href: '/test',
+      href: '/td',
       date: 'SEP 2019 - DEC 2019',
       pills: ['flutter', 'react', 'firebase']
     },
     {
       title: 'WSIB',
       description: 'Created a flutter app for scheduling in person meetings and contact trace employees who participated.',
-      href: '/test',
+      href: '/wsib',
       date: 'MAY 2020 - AUG 2020',
       pills: ['react', 'aws', 'flutter']
     },
     {
       title: 'Tulip',
       description: 'Developed tooling to creating and managing docker based applications and tooling for creating and managing client infrastructure.',
-      href: '/test',
+      href: '/tulip',
       date: 'MAY 2021 - AUG 2021',
       pills: ['golang', 'GCP', 'docker', 'grafana', 'terraform']
     },
+  ];
+
+  let projects = [
+    {
+      title: '1',
+      description: ' asdf asdf sdaf sad asdfasdf asfasd fasd',
+      href: '/orion',
+      src: '/giphy.gif',
+      pills: ['python', 'matplotlib', 'tensorflow', 'numpy']
+    },
+    {
+      title: '2',
+      description: 'asdfasd fsad fsadf asdf asdf sdf sdf asd',
+      href: '/td',
+      src: '/giphy.gif',
+      pills: ['flutter', 'react', 'firebase']
+    },
+    {
+      title: '3',
+      description: 'asdf asdf asd fasdf sadf asdf asdfasdf s',
+      href: '/wsib',
+      src: '/giphy.gif',
+      pills: ['react', 'aws', 'flutter']
+    },
+    {
+      title: '4',
+      description: 'asdfasdfasdf asdf asdf asdf asd fsd',
+      href: '/tulip',
+      src: '/giphy.gif',
+      pills: ['golang', 'GCP', 'docker', 'grafana', 'terraform']
+    },
+
   ];
 </script>
 
@@ -74,11 +107,17 @@
 <div id="projects" />
 <ScrollingTitle margin="3rem" text="Projects " />
 
+<div style="display: flex; justify-content:center;  width:100%">
+  <GridContainer tiles={projects}/>
+</div>
+
 <div id="experience" />
 <ScrollingTitle margin="3rem" text="Experience " />
 <div style="display: flex; justify-content:center; align-items: center; margin-right: auto; margin-left: auto; width:100%">
   <CardContainer cards={workExperience}/>
 </div>
+
+
 
 
 

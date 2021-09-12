@@ -1,27 +1,35 @@
-
 <script lang="ts">
-    export let svg;
-    export let flip = false;
+  export let svg;
+  export let flip = false;
 </script>
 
 {#if flip}
-    <div style="background-image: url({svg});" class="flip" ></div> 
+  <div style="background-image: url({svg});" class="flip" />
 {:else}
-    <div style="background-image: url({svg});" ></div> 
+  <div style="background-image: url({svg});" />
 {/if}
 
 <style>
-    div {
-        padding: 0;
-        margin: 0;
-        aspect-ratio: 930/300;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .flip {
-        transform: rotate(180deg);
-    }
+  div {
+    padding: 0;
+    margin: 0;
+    aspect-ratio: 930/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
+    
+  }
+  @supports not (aspect-ratio: auto) {
+    div {
+      padding-top: 100%;
+      height: 0;
+      position: relative;
+      overflow: hidden;  
+    }
+  }
+  .flip {
+    transform: rotate(180deg);
+  }
 </style>

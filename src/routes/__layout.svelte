@@ -13,9 +13,9 @@
   <title>Daniel Ziorli | Software Engineer</title>
 </svelte:head>
 
-<Navbar />
-<slot />
 
+<Navbar  />
+<slot />
 
 <style>
   :root {
@@ -24,6 +24,4 @@
     --purple: #7952b3;
     --yellow: #ffc107;
   }
-
-  
 </style>
