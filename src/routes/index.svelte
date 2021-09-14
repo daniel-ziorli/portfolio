@@ -5,7 +5,7 @@
   import CardContainer from '../components/CardContainer.svelte';
   import ScrollingTitle from '../components/ScrollingTitle.svelte';
   import Blink from '../components/Blink.svelte';
-  import GridContainer from '../components/GridContainer.svelte';
+  import ProjectContainer from '../components/ProjectContainer.svelte';
 
   let workExperience = [
     {
@@ -44,32 +44,33 @@
 
   let projects = [
     {
-      title: '1',
+      title: 'VR Game',
       description: ' asdf asdf sdaf sad asdfasdf asfasd fasd',
       href: '/orion',
       src: '/giphy.gif',
       pills: ['python', 'matplotlib', 'tensorflow', 'numpy']
     },
     {
-      title: '2',
-      description: 'asdfasd fsad fsadf asdf asdf sdf sdf asd',
+      title: 'CSGO Hack',
+      description: 'Hacked csgo with python. Used pymem to read memory to display/modify the game state with pyQt5 and win32gui. Tool features recoil control, aimbot, trigger bot, auto bhop, wall hacks and radar. Each feature runs on a thread to prevent in-game performance loss.',
       href: '/td',
-      src: '/giphy.gif',
-      pills: ['flutter', 'react', 'firebase']
+      src: '/projects/csgo.gif',
+      pills: ['python', 'pyQt5', 'pymem', 'win32gui', 'multithreading']
     },
     {
-      title: '3',
-      description: 'asdf asdf asd fasdf sadf asdf asdfasdf s',
+      title: 'Productive Youtube',
+      description: 'Created a chrome extension to change video speeds past the 2x cap, disables the home page and disable comments to have a more productive youtube experience.',
       href: '/wsib',
-      src: '/giphy.gif',
-      pills: ['react', 'aws', 'flutter']
+      src: '/projects/productiveYoutube.gif',
+      pills: ['javascript', 'html', 'css', 'chrome api'],
+      alignment: "right",
     },
     {
-      title: '4',
-      description: 'asdfasdfasdf asdf asdf asdf asd fsd',
+      title: 'Doom Engine',
+      description: 'Used python and pygame to recreate the doom rendering engine. Uses a 2D map composed of 2D walls to create a 3D projection of the map. Also features a simple collision detection system which projects the players velocity over the 2d walls.',
       href: '/tulip',
-      src: '/giphy.gif',
-      pills: ['golang', 'GCP', 'docker', 'grafana', 'terraform']
+      src: '/projects/doom.gif',
+      pills: ['python', 'pygame', 'matrix projection']
     }
   ];
 </script>
@@ -117,7 +118,7 @@
 <ScrollingTitle margin="3rem" text="Projects " />
 
 <div style="display: flex; justify-content:center;  width:100%">
-  <GridContainer tiles={projects} />
+  <ProjectContainer tiles={projects} />
 </div>
 
 <div id="experience" />

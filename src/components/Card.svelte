@@ -23,7 +23,7 @@
             <p>{pill}</p>
           {/each}
         </div>
-        <div class="arrow"><IconButton href={href} src="icons/arrow.png"/></div>
+        <div class="arrow"><IconButton href={href} size={38} src="icons/arrow.png"/></div>
       </div>
   </footer>
   
@@ -69,14 +69,13 @@
   footer {
     display: flex;
     flex-direction: column;
-    height: 100px;
     width: 100%;
     align-items: flex-start;
     margin-bottom: 0.5rem;
   }
 
   footer p {
-    font-size: .7rem;
+    font-size: .8rem;
     border: 2px solid grey;
     padding: 5px;
     margin: 5px;
