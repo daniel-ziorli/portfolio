@@ -23,10 +23,8 @@
   }
   @supports not (aspect-ratio: auto) {
     div {
-      padding-top: 100%;
-      height: 0;
-      position: relative;
-      overflow: hidden;  
+      object-fit: cover;
+      height: 320px;
     }
   }
   .flip {
