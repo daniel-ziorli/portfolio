@@ -48,7 +48,7 @@
       description: 'Developing a Multiplayer VR FPS game in unity. Features a physics based climbing system, accurate networked physics simulation and cross platform support. Uses a relay server hosted on linode to allow players to connect through NAT Punchtrough.',
       href: '/orion',
       src: '/projects/vr.gif',
-      pills: ['unity', 'C#', 'mirror', 'blender', 'audacity', 'programming patterns', 'linode', 'relay server']
+      pills: ['unity', 'C#', 'mirror', 'blender', 'audacity', 'linode', 'relay server']
     },
     {
       title: 'CSGO Hack',
@@ -70,7 +70,7 @@
       description: 'Used python and pygame to recreate the doom rendering engine. Uses a 2D map composed of 2D walls to create a 3D projection of the map. Also features a simple collision detection system which projects the players velocity over the 2d walls.',
       href: '/tulip',
       src: '/projects/doom.gif',
-      pills: ['python', 'pygame', 'matrix projection']
+      pills: ['python', 'pygame']
     }
   ];
 </script>
