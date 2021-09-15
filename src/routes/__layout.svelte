@@ -1,3 +1,7 @@
+<script context="module">
+	export const prerender = true;
+</script>
+
 <script lang="ts">
   import Navbar from '../components/NavBar.svelte';
   import { fly } from 'svelte/transition';
