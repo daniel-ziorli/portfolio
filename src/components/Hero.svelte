@@ -20,7 +20,7 @@
   .hero-container {
     max-width: 1200px;
     width: 90%;
-    height: 85vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
