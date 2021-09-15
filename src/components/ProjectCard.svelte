@@ -4,12 +4,12 @@
   export let src;
   export let href;
   export let pills;
-  export let alignment = "center"
+  export let alignment = 'center';
 </script>
 
 <a {href}>
   <section>
-    <div class="image" style="background-image: url({src}); background-position: {alignment};"/>
+    <div class="image" style="background-image: url({src}); background-position: {alignment};" />
     <div class="tile">
       <div class="content">
         <h1>
@@ -20,9 +20,7 @@
         </h2>
       </div>
       <footer>
-        <p class="skill-header">
-          skills
-        </p>
+        <p class="skill-header">skills</p>
         <div class="pills">
           {#each pills as pill}
             <p>{pill}</p>
@@ -40,6 +38,10 @@
     display: flex;
     height: 500px;
     margin: 2rem;
+    transition: .2s;
+  }
+  section:hover {
+    transform: translateX(10px) translateY(-10px);
   }
   .image {
     background-repeat: no-repeat;
@@ -48,7 +50,6 @@
     border-radius: 16px 0 0 16px;
     width: 50%;
   }
-
   .tile {
     margin: 0;
     width: 50%;
@@ -58,9 +59,9 @@
     display: flex;
     flex-direction: column;
   }
-
   .content {
     padding: 2rem;
+    padding-bottom: 0;
     flex: 1;
   }
   a {
@@ -74,14 +75,13 @@
   }
   h2 {
     font-size: 1.4rem;
+    margin-bottom: 0;
     font-weight: normal;
   }
-
   footer {
     justify-self: flex-end;
     padding-bottom: 3rem;
   }
-
   .pills {
     padding-inline: 2rem;
     display: flex;
@@ -95,7 +95,6 @@
     border-radius: 10px;
     text-align: center;
   }
-
   .skill-header {
     border: transparent;
     text-align: left;
@@ -107,7 +106,7 @@
     section {
       flex-direction: column;
       height: auto;
-      margin: .5rem;
+      margin: 0.5rem;
     }
     .tile {
       width: 100%;
@@ -119,7 +118,7 @@
       border-radius: 16px 16px 0 0;
     }
     .content {
-      padding:1rem;
+      padding: 1rem;
     }
     h1 {
       font-size: 1.5rem;

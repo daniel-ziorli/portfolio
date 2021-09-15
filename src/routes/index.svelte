@@ -45,10 +45,10 @@
   let projects = [
     {
       title: 'VR Game',
-      description: ' asdf asdf sdaf sad asdfasdf asfasd fasd',
+      description: 'Developing a Multiplayer VR FPS game in unity. Features a physics based climbing system, accurate networked physics simulation and cross platform support. Uses a relay server hosted on linode to allow players to connect through NAT Punchtrough.',
       href: '/orion',
-      src: '/giphy.gif',
-      pills: ['python', 'matplotlib', 'tensorflow', 'numpy']
+      src: '/projects/vr.gif',
+      pills: ['unity', 'C#', 'mirror', 'blender', 'audacity', 'programming patterns', 'linode', 'relay server']
     },
     {
       title: 'CSGO Hack',
