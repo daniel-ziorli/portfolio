@@ -6,6 +6,8 @@
   import ScrollingTitle from '../components/ScrollingTitle.svelte';
   import Blink from '../components/Blink.svelte';
   import ProjectContainer from '../components/ProjectContainer.svelte';
+  import Socials from '../components/Socials.svelte';
+
 
   let workExperience = [
     {
@@ -88,17 +90,7 @@
   <div class="content about">
     <div class="about-header">
       <h1 style="align-self: left; margin-right: auto;">ABOUT<Blink>_</Blink></h1>
-      <IconButton href="https://github.com/daniel-ziorli" src="icons/github.png" newTab={true} />
-      <IconButton
-        href="https://www.youtube.com/channel/UC9MyKPOkIZkxSiRsxwJbj8Q"
-        src="icons/youtube.png"
-        newTab={true}
-      />
-      <IconButton
-        href="https://www.linkedin.com/in/daniel-ziorli-2443bb164"
-        src="icons/linkedin.png"
-        newTab={true}
-      />
+      <Socials />
     </div>
     <p>
       Hello! My name is Daniel and I enjoy solving problems with tech. My interest in programming

@@ -45,17 +45,12 @@
     <a href="/#about"><h1>ABOUT</h1></a>
     <a href="/#projects"><h1>PROJECTS</h1></a>
     <a href="/#experience"><h1>EXPERIENCE</h1></a>
-    <a href="/#contact"><h1>CONTACT</h1></a>
   </nav>
 </div>
 
 <div class="mobile-nav">
   <div class="hamberger-icon" on:click={toggleMobileMenuClick} use:clickOutside={closeMobileMenuClick}>
-    {#if showMobileMenu}
-      <i class="fas fa-align-right fa-2x" />
-    {:else}
-      <i class="fas fa-align-justify fa-2x" />
-    {/if}
+      <img src="./icons/menu.png" alt="menu" width="32px" height="32px" />
   </div>
   <div class="mobile-menu open">
     <a href="/#home">
@@ -76,11 +71,6 @@
     <a href="/#experience">
       <div class="mobile-button">
         <h1>EXPERIENCE</h1>
-      </div>
-    </a>
-    <a href="/#contact">
-      <div class="mobile-button">
-        <h1>CONTACT</h1>
       </div>
     </a>
   </div>
