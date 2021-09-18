@@ -49,7 +49,7 @@
       title: 'VR Game',
       description:
         'Developing a Multiplayer VR FPS game in unity. Features a physics based climbing system, accurate networked physics simulation, and cross platform support. Uses a relay server hosted on linode to allow players to connect through NAT Punchtrough.',
-      href: '/orion',
+      href: '',
       src: '/projects/vr.gif',
       pills: ['unity', 'C#', 'mirror', 'blender', 'audacity', 'linode', 'relay server']
     },
@@ -57,7 +57,7 @@
       title: 'CSGO Hack',
       description:
         'Hacked csgo with python. Used pymem to read memory to display/modify the game state with pyQt5 and win32gui. Tool features recoil control, aimbot, trigger bot, auto bhop, wall hacks, and radar. Each feature runs on a thread to prevent in-game performance loss.',
-      href: '/td',
+      href: '',
       src: '/projects/csgo.gif',
       pills: ['python', 'pyQt5', 'pymem', 'win32gui', 'multithreading']
     },
@@ -65,7 +65,8 @@
       title: 'Productive Youtube',
       description:
         'Created a chrome extension to change video speeds past the 2x cap, disables the home page and disable comments to have a more productive youtube experience.',
-      href: '/wsib',
+      href: 'https://github.com/daniel-ziorli/productive-youtube',
+      newtab: true,
       src: '/projects/productiveYoutube.gif',
       pills: ['javascript', 'html', 'css', 'chrome api'],
       alignment: 'right'
@@ -74,7 +75,8 @@
       title: 'Doom Engine',
       description:
         'Used python and pygame to recreate the doom rendering engine. Uses a 2D map composed of 2D walls to create a 3D projection of the map. Also features a simple collision detection system which projects the players velocity over the 2d walls.',
-      href: '/tulip',
+      href: 'https://github.com/daniel-ziorli/doom-engine',
+      newtab: true,
       src: '/projects/doom.gif',
       pills: ['python', 'pygame']
     }

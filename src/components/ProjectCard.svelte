@@ -5,9 +5,10 @@
   export let href;
   export let pills;
   export let alignment = 'center';
+  export let newtab = false;
 </script>
 
-<a {href}>
+<a {href} target={newtab === true ? 'target=_blank' : ''} rel="noopener noreferrer">
   <section>
     <div class="image" style="background-image: url({src}); background-position: {alignment};" />
     <div class="tile">
@@ -36,7 +37,7 @@
     max-width: 1200px;
     border-radius: 16px;
     display: flex;
-    height: 500px;
+    height: auto;
     margin: 2rem;
     transition: .2s;
   }
