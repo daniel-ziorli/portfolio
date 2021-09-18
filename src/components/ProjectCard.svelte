@@ -8,7 +8,7 @@
   export let newtab = false;
 </script>
 
-<a {href} target={newtab === true ? 'target=_blank' : ''} rel="noopener noreferrer">
+<a {href} title={href} target={newtab === true ? 'target=_blank' : ''} rel="noopener noreferrer">
   <section>
     <div class="image" style="background-image: url({src}); background-position: {alignment};" />
     <div class="tile">

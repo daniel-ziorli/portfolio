@@ -69,7 +69,7 @@
       newtab: true,
       src: '/projects/productiveYoutube.gif',
       pills: ['javascript', 'html', 'css', 'chrome api'],
-      alignment: 'right'
+      alignment: 'top'
     },
     {
       title: 'Doom Engine',
@@ -137,7 +137,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-
   h1 {
     font-size: 2rem;
     font-weight: normal !important;
@@ -147,36 +146,16 @@
     font-size: 1.3rem;
     font-weight: normal !important;
   }
-
   .about {
     max-width: 800px;
   }
-
   .about-header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
-
-  .light-text {
-    color: var(--text-color, white);
-  }
-
-  .dark-text {
-    color: var(--background-color, black);
-  }
-
   .purple {
     background-color: var(--purple, purple);
-    width: 100%;
-  }
-  .white {
-    background-color: var(--text-color, white);
-    width: 100%;
-  }
-
-  .yellow {
-    background-color: var(--yellow, yellow);
     width: 100%;
   }
 </style>

@@ -8,7 +8,7 @@
 </script>
 
 <div style="padding: {padding}; width={size}; height={size};">
-  <a {href} target={newTab === true ? 'target=_blank' : ''} rel="noopener noreferrer">
+  <a {href} title={href} target={newTab === true ? 'target=_blank' : ''} rel="noopener noreferrer">
     <img {src} {alt} width={size} height={size} />
   </a>
 </div>
