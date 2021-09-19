@@ -24,7 +24,7 @@
   }
   div {
     width: 100vw;
-    height: 30vh;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;

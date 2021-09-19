@@ -93,6 +93,9 @@
       <h1>EXPERIENCE</h1>
     </div>
   </a>
+  <div class="mobile-button">
+    <h1>CLOSE</h1>
+  </div>
 </div>
 
 <style>
@@ -118,7 +121,8 @@
     flex-direction: column;
     align-items: center;
     bottom: -340px;
-    background-color: black;
+    background-color: #17141d;
+    box-shadow: 0 0 3rem #0e0e0e;
     border-radius: 16px;
     left: 2.5vw;
     transition: .3s;
@@ -137,7 +141,7 @@
   }
 
   .open {
-    bottom: -120px;
+    bottom: -70px;
   }
 
   .mobile-button {
