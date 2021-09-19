@@ -23,7 +23,7 @@
             <p>{pill}</p>
           {/each}
         </div>
-        <div class="arrow"><IconButton href={href} size={38} src="icons/arrow.png"/></div>
+        <div class="arrow"><IconButton href={href} size={32} src="icons/arrow.png"/></div>
       </div>
   </footer>
   
