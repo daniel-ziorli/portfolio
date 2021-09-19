@@ -4,8 +4,12 @@
   import clickOutside from "svelte-outside-click";
 
   let showMobileMenu = false;
+  let hideNav = false
+  let y = 0;
+  let prevY = 0;
 
   onMount(() => {
+    prevY = y
     let mobileMenu = document.getElementsByClassName(
       'mobile-menu'
     ) as HTMLCollectionOf<HTMLElement>;
@@ -29,7 +33,7 @@
 
   function closeMobileMenuClick() {
     let mobileMenu = document.getElementsByClassName(
-      'mobile-menu'
+      'mobile-nav'
     ) as HTMLCollectionOf<HTMLElement>;
 
     if (mobileMenu.length != 0 && showMobileMenu) {
@@ -37,9 +41,22 @@
       mobileMenu[0].classList.remove('open');
     }
   }
+
+  function onScroll() {
+    if (y - prevY > 0) {
+      hideNav = true
+      closeMobileMenuClick()
+    }
+    else if (y - prevY < 0){
+      hideNav = false
+    }
+    prevY = y
+  }
 </script>
 
-<div class="desktop-nav">
+<svelte:window bind:scrollY={y} on:scroll={onScroll}/>
+
+<div class="desktop-nav {hideNav ? "desktop-nav-hide" : ""}">
   <nav>
     <a href="/#home" class="left"><h1>DZ</h1></a>
     <a href="/#about"><h1>ABOUT</h1></a>
@@ -48,32 +65,34 @@
   </nav>
 </div>
 
-<div class="mobile-nav">
-  <div class="hamberger-icon" on:click={toggleMobileMenuClick} use:clickOutside={closeMobileMenuClick}>
-      <img src="./icons/menu.png" alt="menu" width="32px" height="32px" />
+<div class="mobile-nav 
+  {hideNav ? "mobile-nav-hide" : ""}
+  {showMobileMenu ? "open" : ""}"
+  on:click={toggleMobileMenuClick} 
+  use:clickOutside={closeMobileMenuClick}>
+  <div class="mobile-icon {showMobileMenu ? "mobile-icon-open" : ""}">
+    <img src="icons/menu-arrow.png" alt="menu arrow" width="32px" height="32px">
   </div>
-  <div class="mobile-menu open">
-    <a href="/#home">
-      <div class="mobile-button">
-        <h1>HOME</h1>
-      </div>
-    </a>
-    <a href="/#about">
-      <div class="mobile-button">
-        <h1>ABOUT</h1>
-      </div>
-    </a>
-    <a href="/#projects">
-      <div class="mobile-button">
-        <h1>PROJECTS</h1>
-      </div>
-    </a>
-    <a href="/#experience">
-      <div class="mobile-button">
-        <h1>EXPERIENCE</h1>
-      </div>
-    </a>
-  </div>
+  <a href="/#home">
+    <div class="mobile-button">
+      <h1>HOME</h1>
+    </div>
+  </a>
+  <a href="/#about">
+    <div class="mobile-button">
+      <h1>ABOUT</h1>
+    </div>
+  </a>
+  <a href="/#projects">
+    <div class="mobile-button">
+      <h1>PROJECTS</h1>
+    </div>
+  </a>
+  <a href="/#experience">
+    <div class="mobile-button">
+      <h1>EXPERIENCE</h1>
+    </div>
+  </a>
 </div>
 
 <style>
@@ -85,52 +104,44 @@
     top: 0px;
     width: 100%;
     background-color: var(--background-color, black);
+    transition: .3s;
+  }
+  .desktop-nav-hide {
+    top: -60px;
   }
 
   .mobile-nav {
     position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 6%;
+    width: 95vw;
+    height: 400px;
     display: none;
-    width: auto;
-    height: 60px;
-  }
-
-  .hamberger-icon {
-    border: 1px solid white;
-    width: 60px;
-    height: 60px;
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: var(--background-color, black);
+    bottom: -340px;
+    background-color: black;
+    border-radius: 16px;
+    left: 2.5vw;
+    transition: .3s;
   }
 
-  .mobile-menu {
-    position: fixed;
-    bottom: 60px;
-    right: 0;
-    margin: 6%;
-    width: auto;
-    height: auto;
-    max-height: 0;
-    max-width: 0;
-    overflow: hidden;
-    border: 2px solid white;
-    background-color: var(--background-color, black);
-    transition: max-height 0.6s ease-in-out, max-width 0.3s ease-in-out;
-    visibility: hidden;
+  .mobile-nav-hide {
+    bottom: -440px;
+  }
+
+  .mobile-icon {
+    padding : 13px;
+    transition: .3s;
+  }
+  .mobile-icon-open {
+    transform: rotate(180deg);
   }
 
   .open {
-    max-height: 1000px;
-    max-width: 1000px;
+    bottom: -120px;
   }
 
   .mobile-button {
     overflow: hidden;
-    padding: 10px;
     text-align: center;
   }
 
