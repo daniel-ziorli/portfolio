@@ -51,4 +51,11 @@
     text-align: center;
     font-size: 1.6rem;
   }
+
+  @media only screen and (max-width: 660px) {
+    .hero-container {
+      height: 95vh;
+      margin-bottom: 5vh;
+    }
+  }
 </style>

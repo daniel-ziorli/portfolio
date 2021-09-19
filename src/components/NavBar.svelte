@@ -4,7 +4,7 @@
   import clickOutside from "svelte-outside-click";
 
   let showMobileMenu = false;
-  let hideNav = true
+  let hideNav = false
   let y = 0;
   let prevY = 0;
 
