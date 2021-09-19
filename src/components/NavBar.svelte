@@ -70,9 +70,13 @@
   {showMobileMenu ? "open" : ""}"
   on:click={toggleMobileMenuClick} 
   use:clickOutside={closeMobileMenuClick}>
-  <div class="mobile-icon {showMobileMenu ? "mobile-icon-open" : ""}">
-    <img src="icons/menu-arrow.png" alt="menu arrow" width="32px" height="32px">
+  <div style="display: flex; align-items: center;">
+    <h1 style="padding-right: 0;">MENU</h1>
+    <div class="mobile-icon {showMobileMenu ? "mobile-icon-open" : ""}">
+      <img src="icons/menu-arrow.png" alt="menu arrow" width="12px" height="12px">
+    </div>
   </div>
+  
   <a href="/#home">
     <div class="mobile-button">
       <h1>HOME</h1>
@@ -116,11 +120,11 @@
   .mobile-nav {
     position: fixed;
     width: 95vw;
-    height: 400px;
+    height: 350px;
     display: none;
     flex-direction: column;
     align-items: center;
-    bottom: -340px;
+    bottom: -300px;
     background-color: #17141d;
     box-shadow: 0 0 3rem #0e0e0e;
     border-radius: 16px;
@@ -129,19 +133,19 @@
   }
 
   .mobile-nav-hide {
-    bottom: -440px;
+    bottom: -450px;
   }
 
   .mobile-icon {
-    padding : 13px;
+    margin: 0.67em;
     transition: .3s;
   }
   .mobile-icon-open {
-    transform: rotate(180deg);
+    transform: rotate(180deg) translateY(2px);
   }
 
   .open {
-    bottom: -70px;
+    bottom: -40px;
   }
 
   .mobile-button {
