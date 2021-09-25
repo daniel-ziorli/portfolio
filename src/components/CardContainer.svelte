@@ -13,6 +13,7 @@
     mouseDown = true;
     startX = e.pageX - container.offsetLeft;
     scrollLeft = container.scrollLeft;
+    e.target.scrollIntoView({behavior: "smooth",inline: "center", block: "center"})
     setTimeout(function () {
       e.target.scrollIntoView({behavior: "smooth",inline: "center", block: "center"})
     }, 110);

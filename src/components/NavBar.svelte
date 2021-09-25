@@ -43,6 +43,10 @@
   }
 
   function onScroll() {
+    if (y < 60) {
+      hideNav = false
+      return;
+    }
     if (y - prevY > 0) {
       hideNav = true
       closeMobileMenuClick()

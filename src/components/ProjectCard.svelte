@@ -34,11 +34,14 @@
 
 <style>
   section {
+    width: 95vw;
     max-width: 1200px;
     border-radius: 16px;
     display: flex;
     height: auto;
-    margin: 2rem;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
     transition: .2s;
   }
   section:hover {
@@ -103,11 +106,14 @@
     margin-left: 5px;
   }
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 900px) {
     section {
+      width: 95vw;
       flex-direction: column;
       height: auto;
       margin: 0.5rem;
+      margin-left: auto;
+      margin-right: auto;
     }
     .tile {
       width: 100%;
