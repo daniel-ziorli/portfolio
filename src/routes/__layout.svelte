@@ -23,10 +23,8 @@
   <link rel="manifest" href="favicon/site.webmanifest">
 </svelte:head>
 
-
 <Navbar  />
 <slot />
-
 <Footer />
 
 <style>
