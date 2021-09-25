@@ -128,7 +128,7 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    bottom: -300px;
+    bottom: -295px;
     background-color: #17141d;
     box-shadow: 0 0 3rem #0e0e0e;
     border-radius: 16px;
