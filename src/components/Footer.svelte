@@ -1,11 +1,14 @@
 <script lang="ts">
   import Socials from './Socials.svelte';
+  import Resume from './Resume.svelte';
+
 </script>
 
 <div>
   <h1>I'd love to chat!</h1>
   <h2>contact me at <a href="mailto:daniel.ziorli@gmail.com?subject=Hi!">daniel.ziorli@gmail.com</a></h2>
   <Socials />
+  <Resume />
 </div>
 
 <style>

@@ -120,7 +120,6 @@
   .desktop-nav-hide {
     top: -60px;
   }
-
   .mobile-nav {
     position: fixed;
     width: 95vw;
@@ -135,11 +134,9 @@
     left: 2.5vw;
     transition: .3s;
   }
-
   .mobile-nav-hide {
     bottom: -450px;
   }
-
   .mobile-icon {
     margin: 0.67em;
     transition: .3s;
@@ -147,16 +144,13 @@
   .mobile-icon-open {
     transform: rotate(180deg) translateY(2px);
   }
-
   .open {
     bottom: -40px;
   }
-
   .mobile-button {
     overflow: hidden;
     text-align: center;
   }
-
   nav {
     display: flex;
     flex-direction: row;
@@ -189,7 +183,6 @@
     .desktop-nav {
       display: none;
     }
-
     .mobile-nav {
       display: flex;
     }

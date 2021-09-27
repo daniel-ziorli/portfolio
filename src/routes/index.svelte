@@ -7,6 +7,8 @@
   import Blink from '../components/Blink.svelte';
   import ProjectContainer from '../components/ProjectContainer.svelte';
   import Socials from '../components/Socials.svelte';
+  import Resume from '../components/Resume.svelte';
+
 
 
   let workExperience = [
@@ -92,7 +94,9 @@
   <div class="content about">
     <div class="about-header">
       <h1 style="align-self: left; margin-right: auto;">ABOUT<Blink>_</Blink></h1>
-      <Socials />
+      <div style="align-self: right;">
+        <Socials />
+      </div>
     </div>
     <p>
       Hello! My name is Daniel and I enjoy solving problems with tech. My interest in programming
@@ -104,6 +108,7 @@
       doing full stack development. I've had the pleasure of working on tooling at Tulip and
       networking at ORION. Personally I have been working on a VR game in Unity using C#.
     </p>
+    <Resume />
   </div>
 </div>
 <Wave svg="waves/black-purple.svg" flip={true} />

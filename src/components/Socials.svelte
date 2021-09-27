@@ -4,6 +4,7 @@
 
 
 <div>
+  
   <IconButton href="https://github.com/daniel-ziorli" src="icons/github.png" newTab={true} />
   <IconButton
     href="https://www.youtube.com/channel/UC9MyKPOkIZkxSiRsxwJbj8Q"
@@ -21,5 +22,8 @@
 <style>
   div {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 </style>

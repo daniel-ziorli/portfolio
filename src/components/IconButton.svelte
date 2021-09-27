@@ -18,5 +18,13 @@
   a {
     width: 100%;
     height: 100%;
+
   }
+  div {
+    transition: .1s;
+  }
+  div:hover {
+    transform: translateY(-5px);
+  }
+
 </style>
