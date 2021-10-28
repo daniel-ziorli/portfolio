@@ -36,9 +36,9 @@
   section {
     width: 95vw;
     max-width: 1200px;
+    min-height: 500px;
     border-radius: 16px;
     display: flex;
-    height: auto;
     margin: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -57,7 +57,7 @@
   .tile {
     margin: 0;
     width: 50%;
-    height: 100%;
+    min-height: 500px;
     background-color: #17141d;
     border-radius: 0 16px 16px 0;
     display: flex;

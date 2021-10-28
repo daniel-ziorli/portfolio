@@ -48,7 +48,7 @@
 
   let projects = [
     {
-      title: 'VR Game',
+      title: 'VR Multiplayer Shooter',
       description:
         'Developing a Multiplayer VR FPS game in unity. Features a physics based climbing system, accurate networked physics simulation, and cross platform support. Uses a relay server hosted on linode to allow players to connect through NAT Punchtrough.',
       href: '',
