@@ -48,10 +48,10 @@
 
   let projects = [
     {
-      title: 'VR Multiplayer Shooter',
+      title: 'Multiplayer VR Shooter',
       description:
         'Developing a Multiplayer VR FPS game in unity. Features a physics based climbing system, accurate networked physics simulation, and cross platform support. Uses a relay server hosted on linode to allow players to connect through NAT Punchtrough.',
-      href: '',
+      href: '/vrgame',
       src: '/projects/vr.gif',
       pills: ['unity', 'C#', 'mirror', 'blender', 'audacity', 'linode', 'relay server']
     },
@@ -59,7 +59,7 @@
       title: 'CSGO Hack',
       description:
         'Hacked csgo with python. Used pymem to read memory to display/modify the game state with pyQt5 and win32gui. Tool features recoil control, aimbot, trigger bot, auto bhop, wall hacks, and radar. Each feature runs on a thread to prevent in-game performance loss.',
-      href: '',
+      href: '/vrgame',
       src: '/projects/csgo.gif',
       pills: ['python', 'pyQt5', 'pymem', 'win32gui', 'multithreading']
     },
