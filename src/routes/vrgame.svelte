@@ -17,7 +17,7 @@
     <iframe width="auto" height="auto" src="https://www.youtube.com/embed/KD6l9dyC9go?controls=0&autoplay=1&loop=1&playlist=KD6l9dyC9go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; repeat;" allowfullscreen></iframe>
   </div>
   <p>
-    The game features fully physics based hands and movement. The hands are controlled using a stable backwards PD controller to control the hands rigidbodies in order to reach the target positions. The climbing physics is done using hooke's law and dampening the force relative to its velocity. When the vector between the target position and the rigidbody a force is applied to the player in order to return the tracked hands to the in-game hands creating a fun and dynamic climbing system.
+    The game features fully physics based hands and movement. The hands are controlled using a stable backwards PD controller to control the hands rigidbodies in order to reach the target positions. The climbing physics is done using hooke's law and dampening the force relative to its velocity. Climbing uses the vector between the target position and the rigidbody to apply a force to the player in order to return the tracked hands to the in-game hands creating a fun and dynamic climbing system.
   </p>
 
   <h2>Physical Buttons for UI</h2>
