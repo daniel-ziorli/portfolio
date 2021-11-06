@@ -66,6 +66,7 @@
     <a href="/#about"><h1>ABOUT</h1></a>
     <a href="/#projects"><h1>PROJECTS</h1></a>
     <a href="/#experience"><h1>EXPERIENCE</h1></a>
+    <a href="https://drive.google.com/file/d/1b72MrLjk_oVtnulE_Go4Tqz3vhzAOdM7/view?usp=sharing" target="target=_blank" rel="noopener noreferrer"><h1>RESUME</h1></a>
   </nav>
 </div>
 
@@ -101,9 +102,12 @@
       <h1>EXPERIENCE</h1>
     </div>
   </a>
-  <div class="mobile-button">
-    <h1>CLOSE</h1>
-  </div>
+  <a href="https://drive.google.com/file/d/1b72MrLjk_oVtnulE_Go4Tqz3vhzAOdM7/view?usp=sharing" target="target=_blank" rel="noopener noreferrer">
+    <div class="mobile-button">
+      <h1>RESUME</h1>
+    </div>
+  </a>
+
 </div>
 
 <style>
