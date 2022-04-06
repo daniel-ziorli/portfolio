@@ -55,8 +55,8 @@
 <svg
   id="visual"
   viewBox="0 0 12 12"
-  width="10"
-  height="10"
+  width="11"
+  height="11"
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
   version="1.1"
