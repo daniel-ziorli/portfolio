@@ -13,9 +13,9 @@
     mouseDown = true;
     startX = e.pageX - container.offsetLeft;
     scrollLeft = container.scrollLeft;
-    e.target.scrollIntoView({behavior: "smooth",inline: "center", block: "center"})
+    e.target.scrollIntoView({behavior: "smooth",inline: "center"})
     setTimeout(function () {
-      e.target.scrollIntoView({behavior: "smooth",inline: "center", block: "center"})
+      e.target.scrollIntoView({behavior: "smooth",inline: "center"})
     }, 110);
 
   }
@@ -49,10 +49,14 @@
       on:mouseover={(e) => select(e, i)}
       on:focus={(e) => select(e, i)}
       class="card 
-      {i == currentlyClicked ? 'selected' : ''}
-      {i > currentlyClicked && currentlyClicked != -1 ? 'shift-right' : ''}
-      {i == cards.length - 1 && currentlyClicked != -1 ? 'last' : ''}
-      {i == 0 && currentlyClicked != -1 ? 'first' : ''}"
+        {i == currentlyClicked ? 'selected' : ''}
+        {i < currentlyClicked && currentlyClicked != -1 ? 'shift-left' : ''}
+        {i > currentlyClicked && currentlyClicked != -1 ? 'shift-right' : ''}
+
+        {i == cards.length - 1 && currentlyClicked != -1 ? 'last' : ''}
+        {i == 0 && currentlyClicked != -1 ? 'first' : ''}
+      "
+      style="z-index: {Math.round(1000/(i+1))};"
     >
       <Card {...c}/>
     </div>
@@ -86,19 +90,22 @@
   }
 
   .shift-right {
-    transform: translateX(130px);
+    transform: translateX(30px);
+  }
+  .shift-left {
+    transform: translateX(-30px);
   }
 
   .card:not(:first-child) {
-    margin-left: -130px;
+    margin-left: -15px;
   }
 
   .last {
-    padding-right: 100px;
+    padding-right: 15px;
   }
 
   .first {
-    padding-left: 100px;
+    padding-left: 15px;
   }
 
   .card-container::-webkit-scrollbar {

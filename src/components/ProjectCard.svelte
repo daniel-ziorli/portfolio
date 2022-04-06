@@ -57,7 +57,6 @@
   .tile {
     margin: 0;
     width: 50%;
-    min-height: 500px;
     background-color: #17141d;
     border-radius: 0 16px 16px 0;
     display: flex;

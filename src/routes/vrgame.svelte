@@ -8,7 +8,7 @@
 <div>
   <h1>Introduction</h1>
   <p>
-    Over the past 6 months I have been learning how to create a Multiplayer VR Fps in unity. It allows you to climb, jump, slide and shoot with fully physics based movement and interaction. It's created with a robust game manager allowing for a plethora of different game modes. The multiplayer is done in mirror and uses a relay server to connect players through nat punchthrough. It started out as a platformer similar to human fall flat but then I thought it would be way cooler if it had guns. It basically turned into a John Wick simulator which is pretty awesome.
+    Over the past 6 months I have been learning how to create a Multiplayer VR Fps in unity. It allows you to climb, jump, slide and shoot with fully physics based movement and interaction. It's created with a robust game manager allowing for a plethora of different game modes. The multiplayer is done in mirror and uses a relay server to connect players through nat punchthrough. It started out as a platformer similar to human fall flat but then I thought it would be way cooler if it had guns.
   </p>
 
   <h1>Features</h1>

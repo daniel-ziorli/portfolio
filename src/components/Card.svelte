@@ -41,7 +41,7 @@
     
     border-radius: 16px;
     background: #17141d;
-    box-shadow: -1rem 0 3rem #0e0e0e;
+    box-shadow: 1rem 0 3rem #0e0e0eb7;
     word-wrap: break-word;
   }
 
