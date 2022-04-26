@@ -19,7 +19,7 @@
   <h2>Effective requirements gathering</h2>
   <p>
     Although this is a trivial skill it is probably one of the most important ones. I learned that
-    if you don’t ask the right questions you end up doing a lot of work that is not what is
+    if you don't ask the right questions you end up doing a lot of work that is not what is
     required. During the term I worked on various projects by myself, I worked with various
     technical and non technical departments to generate requirements list that were detailed and
     accurate to their needs. Gathering accurate requirements allowed me to plan and complete my
@@ -32,7 +32,7 @@
     Since I was the only developer at the company at the time my code needed to work after I left.
     To insure quality code I worked on creating well documented, clean and thoroughly tested code. I
     used GitHub to store my documentation files and code and various python libraries such as
-    selenium to test my gui’s. This skill is a great transferable skills as it adds value to the
+    selenium to test my gui's. This skill is a great transferable skills as it adds value to the
     work I complete and leave with the company.
   </p>
 
@@ -63,8 +63,8 @@
   <h1>Conclusion</h1>
   <p>
     Overall the experience was great. It taught me a lot about managing time, keeping on top of
-    tasks and providing quality work that I can be proud of. I’m very proud to work with Big data to
-    develop statistical models that have helped and will continue to help ORION’s network run
+    tasks and providing quality work that I can be proud of. I'm very proud to work with Big data to
+    develop statistical models that have helped and will continue to help ORION's network run
     smoothly in the future. Working with many different and diverse teams gave me insights into were
     their problems lie and helped me understand how to better suit their needs. ORION is a great
     company and gave me a lot of freedom to develop and strive and would love to work with them

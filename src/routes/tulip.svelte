@@ -41,7 +41,7 @@
 
   <h1>Conclusion</h1>
   <p>
-    I really enjoyed my time at Tulip. It taught me a lot about how companies manage and develop their code base to allow for change and expansion. I was able to work with flexible hours in order to achieve my goals. I’m proud of my progress with GO as I came into the term knowing nothing about it. Coming out of the term I feel confident that I could use GO in my own projects or in another corporate setting. I am also very excited to apply my knowledge on Docker. I have already applied Docker to one of my personal projects and plan to continue to learn and expand on it. Overall, Tulip has taught me a tone about creating applications that are scalable and maintainable. I’m truly excited to learn and apply the knowledge I have developed at Tulip in the future. 
+    I really enjoyed my time at Tulip. It taught me a lot about how companies manage and develop their code base to allow for change and expansion. I was able to work with flexible hours in order to achieve my goals. I'm proud of my progress with GO as I came into the term knowing nothing about it. Coming out of the term I feel confident that I could use GO in my own projects or in another corporate setting. I am also very excited to apply my knowledge on Docker. I have already applied Docker to one of my personal projects and plan to continue to learn and expand on it. Overall, Tulip has taught me a tone about creating applications that are scalable and maintainable. I'm truly excited to learn and apply the knowledge I have developed at Tulip in the future. 
   </p>
 </div>
 

@@ -8,7 +8,7 @@
 <div>
   <h1>Introduction</h1>
   <p>
-    During my summer co-op I worked at WSIB’s lab as a Software Developer! WSIB lab is a branch
+    During my summer co-op I worked at WSIB's lab as a Software Developer! WSIB lab is a branch
     focused on creating new products with new technology. While I worked there I was able to
     prototype a contact tracing app, a scheduling app and a chrome extension for hiring.
   </p>
@@ -37,8 +37,8 @@
     First I created a chrome extension to redact personal information from portfolio sites to remove
     biases in the hiring process. I was able to create a plan to pitch it to my co-workers and
     develop it for production. The second place was in the use of flutter over react. I had
-    experience with flutter from past co-op’s and when the team needed to create a mobile app I
-    suggested flutter. At first they were skeptical so I created a pro’s and con’s document
+    experience with flutter from past co-op's and when the team needed to create a mobile app I
+    suggested flutter. At first they were skeptical so I created a pro's and con's document
     evaluation react native and flutter as well as demoed a basic flutter application and its code
     which ultimately lead to the use of flutter.
   </p>
@@ -59,7 +59,7 @@
     also learned AWS which was daunting but got my feet wet and will be very valuable in the future.
     I was also able to improve my already existing skills. I was able to learn more about firebase
     and flutter and really hone my skills. WSIB has taught me a lot about front end frame works and
-    backend technologies and I’m excited to apply my knowledge in the future.
+    backend technologies and I'm excited to apply my knowledge in the future.
   </p>
 </div>
 

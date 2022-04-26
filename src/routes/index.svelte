@@ -59,7 +59,7 @@
       title: 'CSGO Hack',
       description:
         'Hacked csgo with python. Used pymem to read memory to display/modify the game state with pyQt5 and win32gui. Tool features recoil control, aimbot, trigger bot, auto bhop, wall hacks, and radar. Each feature runs on a thread to prevent in-game performance loss.',
-      href: '/vrgame',
+      href: '',
       src: '/projects/csgo.gif',
       pills: ['python', 'pyQt5', 'pymem', 'win32gui', 'multithreading']
     },
@@ -104,7 +104,7 @@
       programming is hard and game development is even harder.
     </p>
     <p>
-      Fast-forward to today, and I’ve had experience working in large companies such as TD and WSIB
+      Fast-forward to today, and I've had experience working in large companies such as TD and WSIB
       doing full stack development. I've had the pleasure of working on tooling at Tulip and
       networking at ORION. Personally I have been working on a VR game in Unity using C#.
     </p>

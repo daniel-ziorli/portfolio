@@ -25,7 +25,7 @@
     <iframe width="auto" height="auto" src="https://www.youtube.com/embed/yO67lNr-T_4?controls=0&autoplay=1&loop=1&playlist=yO67lNr-T_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; repeat;" allowfullscreen></iframe>
   </div>
   <p>
-    Using laser points for menus in vr is kind of weird so I created physical buttons that can interact with unity’s UI system. When the button rigidbody is pushed below a threshold it will invoke a UnityEvent specified in the editor in order to inject a keyboard input. When the left button is pushed it simply injects a left input as if you were pushing it on a joystick or keyboard.
+    Using laser points for menus in vr is kind of weird so I created physical buttons that can interact with unity's UI system. When the button rigidbody is pushed below a threshold it will invoke a UnityEvent specified in the editor in order to inject a keyboard input. When the left button is pushed it simply injects a left input as if you were pushing it on a joystick or keyboard.
   </p>
 
   <h2>Accurate Throwing</h2>
@@ -41,7 +41,7 @@
     <iframe width="auto" height="auto" src="https://www.youtube.com/embed/6Ns-c61-YZk?controls=0&autoplay=1&loop=1&playlist=6Ns-c61-YZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; repeat;" allowfullscreen></iframe>
   </div>
   <p>
-    This feature was based off of Half-Life: Alyx’s force pull. It uses kinematic equations to set the object's initial velocity of the object. If the player moves their body or hand the object will completely miss. So as the object is in flight a PID controller is used to guide the object to the player's hand even if the player moves their hands, slides to a new position or jumps out of the way.
+    This feature was based off of Half-Life: Alyx's force pull. It uses kinematic equations to set the object's initial velocity of the object. If the player moves their body or hand the object will completely miss. So as the object is in flight a PID controller is used to guide the object to the player's hand even if the player moves their hands, slides to a new position or jumps out of the way.
   </p>
 
 </div>

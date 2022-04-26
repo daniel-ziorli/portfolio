@@ -1,7 +1,7 @@
 <script lang="ts">
     import IconButton from './IconButton.svelte'
 </script>
-<a href="https://drive.google.com/file/d/1b72MrLjk_oVtnulE_Go4Tqz3vhzAOdM7/view?usp=sharing" target="target=_blank" rel="noopener noreferrer">
+<a href="https://drive.google.com/file/d/1esxQ-IxxpMlBT3s8pQ57vXqUhrypaMUV/view?usp=sharing" target="target=_blank" rel="noopener noreferrer">
     <div>
         <h1>Resume</h1>
         <img src="icons/arrow-orange.png" alt="arrow" width="16px" height="16px" />
@@ -36,6 +36,6 @@
   }
 
   a:hover {
-      transform: translateX(5px) translateY(-5px);
+      transform: translateX(5px);
   }
 </style>
