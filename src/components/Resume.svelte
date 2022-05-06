@@ -1,8 +1,8 @@
 <script lang="ts">
-  let resumePath = import.meta.env.VITE_RESUME_PATH;
+  import { variables } from "../lib/variables";
 </script>
 
-<a href={resumePath ? resumePath.toString() : ""}>
+<a href="{variables.resumePath ? variables.resumePath.toString() : ""}">
   <div>
     <h1>Resume</h1>
     <img src="icons/arrow-orange.png" alt="arrow" width="16px" height="16px" />

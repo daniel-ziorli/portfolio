@@ -2,8 +2,7 @@
   import { fly } from 'svelte/transition';
   import { onMount } from 'svelte';
   import clickOutside from 'svelte-outside-click';
-
-  let resumePath = import.meta.env.VITE_RESUME_PATH;
+  import { variables } from "../lib/variables";
 
   let showMobileMenu = false;
   let hideNav = false;
@@ -65,7 +64,7 @@
     <a href="/#about"><h1>ABOUT</h1></a>
     <a href="/#projects"><h1>PROJECTS</h1></a>
     <a href="/#experience"><h1>EXPERIENCE</h1></a>
-    <a href={resumePath ? resumePath.toString() : ''}><h1>RESUME</h1></a
+    <a href={variables.resumePath ? variables.resumePath.toString() : ''}><h1>RESUME</h1></a
     >
   </nav>
 </div>
@@ -104,7 +103,7 @@
       <h1>EXPERIENCE</h1>
     </div>
   </a>
-  <a href={resumePath ? resumePath.toString() : ''}>
+  <a href={variables.resumePath ? variables.resumePath.toString() : ''}>
     <div class="mobile-button">
       <h1>RESUME</h1>
     </div>
