@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri May  6 16:55:22 2022
+# Make data base, printed on Sun May 22 00:22:29 2022
 
 # Variables
 
@@ -51,7 +51,7 @@ VSCODE_CWD = /mnt/c/Users/kanno/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/donion/.vscode-server/bin/57fd6d0195bb9b9d1b49f6da5db789060795de47/bin/remote-cli:/home/donion/.local/bin:/home/donion/Applications/android/platform-tools:/home/donion/Applications/android/emulator:/home/donion/Applications/android/cmdline-tools/5.0/bin:/home/donion/Applications/flutter/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_2004.2022.1.0_x64__79rhkp1fndgsc:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Oculus/Support/oculus-runtime:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Java/jre1.8.0_321/bin:/mnt/c/Android/cmdline-tools/tools/bin:/mnt/c/Android/platform-tools:/mnt/c/Android/emulator:/mnt/c/src/flutter/bin:/mnt/c/gradle-6.5.1/bin:/mnt/c/Program Files/Java/jdk-17.0.2/bin:/mnt/c/Program Files/Java/jdk1.8.0_321/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/kanno/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/kanno/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/kanno/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/kanno/AppData/Local/Programs/Hyper/resources/bin:/snap/bin:/usr/local/go/bin
+PATH = /home/donion/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/home/donion/.local/bin:/home/donion/Applications/android/platform-tools:/home/donion/Applications/android/emulator:/home/donion/Applications/android/cmdline-tools/5.0/bin:/home/donion/Applications/flutter/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_2004.2022.1.0_x64__79rhkp1fndgsc:/mnt/c/Program Files/Oculus/Support/oculus-runtime:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Java/jre1.8.0_321/bin:/mnt/c/Android/cmdline-tools/tools/bin:/mnt/c/Android/platform-tools:/mnt/c/Android/emulator:/mnt/c/src/flutter/bin:/mnt/c/gradle-6.5.1/bin:/mnt/c/Program Files/Java/jdk-17.0.2/bin:/mnt/c/Program Files/Java/jdk1.8.0_321/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/kanno/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/kanno/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/kanno/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/kanno/AppData/Local/Programs/Hyper/resources/bin:/snap/bin:/usr/local/go/bin
 # environment
 NAME = Code
 # environment
@@ -59,7 +59,7 @@ GOPATH = /home/donion/go_projects
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-9ddc1016-30ab-4d32-8570-61e041bfca4c.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-daf8d09b-b7ce-480e-94f9-e1f6df157bda.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -75,7 +75,7 @@ PWD = /home/donion/code/svelte/portfolio
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/1535_interop
+WSL_INTEROP = /run/WSL/252_interop
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -85,7 +85,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = donion
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -109,7 +109,7 @@ LIBVIRT_DEFAULT_URI = qemu:///system
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
-VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/kanno/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.2
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/kanno/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
 # default
 MAKE_COMMAND := make
 # default
@@ -133,7 +133,7 @@ MAKEFILES :=
 # automatic
 <F = $(notdir $<)
 # environment
-ADB_SERVER_SOCKET = tcp:172.26.144.1:5037
+ADB_SERVER_SOCKET = tcp:172.22.224.1:5037
 # environment
 LC_ALL = C
 # environment
@@ -154,8 +154,10 @@ TERM = xterm-256color
 VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 WSL_DISTRO_NAME = Ubuntu
+# environment
+MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=71/1024=7%, Rehash=0, Collisions=5/96=5%
+# Load=72/1024=7%, Rehash=0, Collisions=5/97=5%
 
 # Pattern-specific Variable Values
 
@@ -163,9 +165,9 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Directories
 
-# . (device 2064, inode 3339): 18 files, no impossibilities.
+# . (device 2064, inode 3339): 19 files, no impossibilities.
 
-# 18 files, no impossibilities in 1 directories.
+# 19 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -183,7 +185,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-06 16:55:22.140391142
+#  Last modified 2022-05-06 17:33:11.090417322
 #  File has been updated.
 #  Successfully updated.
 
@@ -198,7 +200,7 @@ run:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
-	npm run dev -- --open
+	npm run dev
 
 # files hash-table stats:
 # Load=5/1024=0%, Rehash=0, Collisions=0/15=0%
@@ -208,12 +210,12 @@ run:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 24 / storage = 237 B / avg = 9 B
-# current buf: size = 8162 B / used = 237 B / count = 24 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 25 / storage = 242 B / avg = 9 B
+# current buf: size = 8162 B / used = 242 B / count = 25 / avg = 9 B
 
-# strcache performance: lookups = 29 / hit rate = 17%
+# strcache performance: lookups = 30 / hit rate = 16%
 # hash-table stats:
-# Load=24/8192=0%, Rehash=0, Collisions=1/29=3%
-# Finished Make data base on Fri May  6 16:55:22 2022
+# Load=25/8192=0%, Rehash=0, Collisions=1/30=3%
+# Finished Make data base on Sun May 22 00:22:29 2022
 
  

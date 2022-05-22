@@ -8,7 +8,7 @@
 <div>
   <h1>Introduction</h1>
   <p>
-    Over the past 6 months I have been learning how to create a Multiplayer VR Fps in unity. It allows you to climb, jump, slide and shoot with fully physics based movement and interaction. It's created with a robust game manager allowing for a plethora of different game modes. The multiplayer is done in mirror and uses a relay server to connect players through nat punchthrough. It started out as a platformer similar to human fall flat but then I thought it would be way cooler if it had guns.
+    Over the past year and a half I have been learning how to create a Multiplayer VR FPS in unity named <a href="https://store.steampowered.com/app/1916360/Project_Impulse/">Project Impulse</a>, which you can <a href="https://store.steampowered.com/app/1916360/Project_Impulse/">wishlist on steam</a> right now! It allows you to climb, jump, slide and shoot with fully physics based movement and interaction. It's created with a robust game manager allowing for a plethora of different game modes and also has support for modded maps! The multiplayer is done in mirror and uses a relay server to connect players through nat punchthrough.
   </p>
 
   <h1>Features</h1>
@@ -18,6 +18,11 @@
   </div>
   <p>
     The game features fully physics based hands and movement. The hands are controlled using a stable backwards PD controller to control the hands rigidbodies in order to reach the target positions. The climbing physics is done using hooke's law and dampening the force relative to its velocity. Climbing uses the vector between the target position and the rigidbody to apply a force to the player in order to return the tracked hands to the in-game hands creating a fun and dynamic climbing system.
+  </p>
+
+  <h2>Mod Support</h2>
+  <p>
+    Using unity's addressables and mod.io I created comprehensive mod support for Project Impulse. You can go to my github and download the <a href="https://github.com/daniel-ziorli/ProjectImpulseModder">custom editor</a>, create a map and then publish it to mod.io for others to enjoy. It also has a comprehensive validation system that informs the modder of certain requirements. For example if you’re creating a capture the flag map the arena must have two flag spawn points in order for it to be a valid capture the flag map.
   </p>
 
   <h2>Physical Buttons for UI</h2>
@@ -84,5 +89,9 @@
     margin-top: 4rem;
     margin-bottom: 8rem;
     line-height: 2rem;
+  }
+
+  a {
+    color: var(--purple);
   }
 </style>

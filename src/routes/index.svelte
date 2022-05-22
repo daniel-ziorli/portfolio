@@ -47,12 +47,12 @@
 
   let projects = [
     {
-      title: 'Multiplayer VR Shooter',
+      title: 'Project Impulse',
       description:
-        'Developing a Multiplayer VR FPS game in unity. Features a physics based climbing system, accurate networked physics simulation, and cross platform support. Uses a relay server hosted on linode to allow players to connect through NAT Punchtrough.',
+        'Developing a Multiplayer VR shooter in unity for Steam and Oculus. It features a physics based climbing system, mod support, voice chat, accurate networked physics simulation, cross platform support and so much more!',
       href: '/vrgame',
       src: '/projects/vr.gif',
-      pills: ['unity', 'C#', 'mirror', 'blender', 'audacity', 'linode', 'relay server']
+      pills: ['Unity', 'C#', 'Mirror', 'Addressables', 'Mod.io', 'Blender', 'Linode']
     },
     {
       title: 'CSGO Hack',
@@ -60,7 +60,7 @@
         'Hacked csgo with python. Used pymem to read memory to display/modify the game state with pyQt5 and win32gui. Tool features recoil control, aimbot, trigger bot, auto bhop, wall hacks, and radar. Each feature runs on a thread to prevent in-game performance loss.',
       href: '',
       src: '/projects/csgo.gif',
-      pills: ['python', 'pyQt5', 'pymem', 'win32gui', 'multithreading']
+      pills: ['Python', 'pyQt5', 'pymem', 'win32gui', 'multithreading']
     },
     {
       title: 'Productive Youtube',
@@ -69,7 +69,7 @@
       href: 'https://github.com/daniel-ziorli/productive-youtube',
       newtab: true,
       src: '/projects/productiveYoutube.gif',
-      pills: ['javascript', 'html', 'css', 'chrome api'],
+      pills: ['Javascript', 'HTML', 'CSS', 'Chrome API'],
       alignment: 'top'
     },
     {
@@ -79,7 +79,7 @@
       href: 'https://github.com/daniel-ziorli/doom-engine',
       newtab: true,
       src: '/projects/doom.gif',
-      pills: ['python', 'pygame']
+      pills: ['Python', 'pygame']
     }
   ];
 </script>
