@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 22 00:22:29 2022
+# Make data base, printed on Sun May 29 18:00:54 2022
 
 # Variables
 
@@ -59,7 +59,7 @@ GOPATH = /home/donion/go_projects
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-daf8d09b-b7ce-480e-94f9-e1f6df157bda.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-8ac83a43-0a70-439f-9ed6-dc7b329539a2.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -75,7 +75,7 @@ PWD = /home/donion/code/svelte/portfolio
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/252_interop
+WSL_INTEROP = /run/WSL/207_interop
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -85,7 +85,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = donion
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -133,7 +133,7 @@ MAKEFILES :=
 # automatic
 <F = $(notdir $<)
 # environment
-ADB_SERVER_SOCKET = tcp:172.22.224.1:5037
+ADB_SERVER_SOCKET = tcp:172.22.240.1:5037
 # environment
 LC_ALL = C
 # environment
@@ -216,6 +216,6 @@ run:
 # strcache performance: lookups = 30 / hit rate = 16%
 # hash-table stats:
 # Load=25/8192=0%, Rehash=0, Collisions=1/30=3%
-# Finished Make data base on Sun May 22 00:22:29 2022
+# Finished Make data base on Sun May 29 18:00:54 2022
 
  
