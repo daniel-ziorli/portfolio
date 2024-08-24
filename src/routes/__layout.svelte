@@ -1,13 +1,6 @@
 <script lang="ts">
   import Navbar from '../components/NavBar.svelte';
   import Footer from '../components/Footer.svelte';
-  import { fly } from 'svelte/transition';
-  import { onMount, afterUpdate } from 'svelte';
-
-  let show = false;
-  onMount(() => {
-    show = true;
-  });
 </script>
 
 <svelte:head>

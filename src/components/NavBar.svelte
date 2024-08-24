@@ -1,8 +1,7 @@
 <script lang="ts">
-  import { fly } from 'svelte/transition';
   import { onMount } from 'svelte';
   import clickOutside from 'svelte-outside-click';
-  import { variables } from "../lib/variables";
+  import { variables } from '../lib/variables';
 
   let showMobileMenu = false;
   let hideNav = false;
@@ -64,8 +63,7 @@
     <a href="/#about"><h1>ABOUT</h1></a>
     <a href="/#projects"><h1>PROJECTS</h1></a>
     <a href="/#experience"><h1>EXPERIENCE</h1></a>
-    <a href={variables.resumePath ? variables.resumePath.toString() : ''}><h1>RESUME</h1></a
-    >
+    <a href={variables.resumePath ? variables.resumePath.toString() : ''}><h1>RESUME</h1></a>
   </nav>
 </div>
 
