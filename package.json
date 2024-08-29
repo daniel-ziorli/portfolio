@@ -31,7 +31,6 @@
   "type": "module",
   "dependencies": {
     "gh-pages": "^3.2.3",
-    "kute.js": "^2.1.2",
-    "svelte-outside-click": "^1.1.1"
+    "kute.js": "^2.1.2"
   }
 }

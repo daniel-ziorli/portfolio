@@ -1,6 +1,5 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import clickOutside from 'svelte-outside-click';
   import { variables } from '../lib/variables';
 
   let showMobileMenu = false;
@@ -53,6 +52,26 @@
     }
     prevY = y;
   }
+
+  function clickOutside(element, callbackFunction) {
+    function onClick(event) {
+      if (!element.contains(event.target)) {
+        callbackFunction();
+      }
+    }
+
+    document.body.addEventListener('click', onClick);
+
+    return {
+      update(newCallbackFunction) {
+        callbackFunction = newCallbackFunction;
+      },
+      destroy() {
+        document.body.removeEventListener('click', onClick);
+      }
+    };
+  }
+  showMobileMenu = false;
 </script>
 
 <svelte:window bind:scrollY={y} on:scroll={onScroll} />
@@ -72,7 +91,9 @@
   {hideNav ? 'mobile-nav-hide' : ''}
   {showMobileMenu ? 'open' : ''}"
   on:click={toggleMobileMenuClick}
-  use:clickOutside={closeMobileMenuClick}
+  use:clickOutside={() => {
+    showMobileMenu = false;
+  }}
 >
   <div style="display: flex; align-items: center;">
     <h1 style="padding-right: 0;">MENU</h1>
