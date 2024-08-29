@@ -50,7 +50,7 @@
       title: 'Project Impulse',
       description:
         'Developing a Multiplayer VR shooter in unity for Steam and Oculus. It features a physics based climbing system, mod support, voice chat, accurate networked physics simulation, cross platform support and so much more!',
-      href: '/vrgame',
+      href: 'project/vrgame',
       src: '/projects/vr.gif',
       pills: ['Unity', 'C#', 'Mirror', 'Addressables', 'Mod.io', 'Blender', 'Linode']
     },
