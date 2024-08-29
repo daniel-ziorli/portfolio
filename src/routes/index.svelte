@@ -47,6 +47,14 @@
 
   let projects = [
     {
+      title: 'LLM Text Adventure',
+      description:
+        'Created a real-time multiplayer text adventure game using Supabase for infrastructure, React for the frontend, and a custom LLM framework with Gemini Flash for adaptive game narratives.',
+      href: 'https://dnd-fronted.vercel.app/',
+      newtab: true,
+      pills: ['Supabase', 'React', 'Gemini 1.5 Flash', 'LLM', 'Dino', 'Typescript']
+    },
+    {
       title: 'Project Impulse',
       description:
         'Developing a Multiplayer VR shooter in unity for Steam and Oculus. It features a physics based climbing system, mod support, voice chat, accurate networked physics simulation, cross platform support and so much more!',
