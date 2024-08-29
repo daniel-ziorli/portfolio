@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ScrollingTitle from '../../components/ScrollingTitle.svelte';
+  import ScrollingTitle from '../components/ScrollingTitle.svelte';
 </script>
 
 <div style="margin-top: 80px;" />
