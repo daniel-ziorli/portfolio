@@ -53,7 +53,26 @@
       href: 'https://dnd-fronted.vercel.app/',
       src: '/projects/dnd.png',
       newtab: true,
-      pills: ['Supabase', 'React', 'Gemini 1.5 Flash', 'LLM', 'Dino', 'Typescript']
+      pills: [
+        'Supabase',
+        'React',
+        'Gemini',
+        'Gen AI',
+        'Prompt Engineering',
+        'Dino',
+        'Typescript',
+        'Tailwind'
+      ]
+    },
+    {
+      title: 'LLM Browser Extension',
+      description: `Developed a chrome extension allowing users can harness the power of LLMs within their current browsing context.
+        It's useful for creating notes, asking questions, summarizing text, and more.
+        It also works on youtube videos, enabling users to get answers without watching the whole thing.`,
+      href: 'https://github.com/daniel-ziorli/browser-chat',
+      src: '/projects/browser_chat.gif',
+      newtab: true,
+      pills: ['Chrome Extension API', 'React', 'Gemini', 'Javascript', 'Tailwind']
     },
     {
       title: 'Project Impulse',
@@ -112,9 +131,10 @@
       programming is hard and game development is even harder.
     </p>
     <p>
-      Fast-forward to today, and I've had experience working in large companies such as TD and WSIB
-      doing full stack development. I've had the pleasure of working on tooling at Tulip and
-      networking at ORION. Personally I have been working on a VR game in Unity using C#.
+      Fast-forward to today, and I've had experience working in large companies such as Veerum, TD
+      and WSIB doing full stack development. I've had the pleasure of working on tooling at Tulip
+      and networking at ORION. Personally I have been working on a multiplayer llm text adventure
+      game using React, Supabase and Gemini.
     </p>
     <Resume />
   </div>
