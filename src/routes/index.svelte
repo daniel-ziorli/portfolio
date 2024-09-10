@@ -65,6 +65,16 @@
       ]
     },
     {
+      title: 'Meh Window Manager',
+      description: `A Simple cross platform window manager that allows you to quickly switch between applications with hotkeys.
+        The term "meh" refers to the combination of keys used to trigger the window manager, by default meh is bound to Ctrl + Alt + Shift
+        but everything can be changed with the config file.`,
+      href: 'https://github.com/daniel-ziorli/MehWindowManager',
+      src: '/projects/meh.gif',
+      newtab: true,
+      pills: ['Python']
+    },
+    {
       title: 'LLM Browser Extension',
       description: `Developed a chrome extension allowing users can harness the power of LLMs within their current browsing context.
         It's useful for creating notes, asking questions, summarizing text, and more.
