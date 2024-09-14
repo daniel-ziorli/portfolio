@@ -56,6 +56,7 @@
       pills: [
         'Supabase',
         'React',
+        'Zustand',
         'Gemini',
         'Gen AI',
         'Prompt Engineering',
@@ -77,7 +78,7 @@
     {
       title: 'LLM Browser Extension',
       description: `Developed a chrome extension allowing users can harness the power of LLMs within their current browsing context.
-        It's useful for creating notes, asking questions, summarizing text, and more.
+        It's useful for creating notes, filling in forms using personal information, asking questions, summarizing text, and more.
         It also works on youtube videos, enabling users to get answers without watching the whole thing.`,
       href: 'https://github.com/daniel-ziorli/browser-chat',
       src: '/projects/browser_chat.gif',
