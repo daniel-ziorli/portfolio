@@ -76,9 +76,19 @@
       pills: ['Python']
     },
     {
-      title: 'LLM Browser Extension',
+      title: 'Auto Fill Extension',
+      description: `Created a chrome extension that allows users to automatically fill forms using a hotkey.
+      Add any context or personal information and the extension will use it to fill out inputs, select dropdown values, check checkboxes and click radio buttons.
+      `,
+      href: 'https://github.com/daniel-ziorli/browser-chat',
+      src: '/projects/browser_chat.gif',
+      newtab: true,
+      pills: ['Chrome Extension API', 'React', 'Gemini', 'Javascript', 'Tailwind']
+    },
+    {
+      title: 'Browser Chat Extension',
       description: `Developed a chrome extension allowing users can harness the power of LLMs within their current browsing context.
-        It's useful for creating notes, filling in forms using personal information, asking questions, summarizing text, and more.
+        It's useful for creating notes, asking questions, summarizing text, and more.
         It also works on youtube videos, enabling users to get answers without watching the whole thing.`,
       href: 'https://github.com/daniel-ziorli/browser-chat',
       src: '/projects/browser_chat.gif',
