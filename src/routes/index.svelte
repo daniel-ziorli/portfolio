@@ -152,10 +152,10 @@
       programming is hard and game development is even harder.
     </p>
     <p>
-      Fast-forward to today, and I've had experience working in large companies such as Veerum, TD
-      and WSIB doing full stack development. I've had the pleasure of working on tooling at Tulip
-      and networking at ORION. Personally I have been working on a multiplayer llm text adventure
-      game using React, Supabase and Gemini.
+      Fast-forward to today, and I've had experience working at companies such as Veerum, TD and
+      WSIB doing full stack development. I've had the pleasure of working on tooling at Tulip and
+      networking at ORION. Personally I have been working on a multiplayer llm text adventure game
+      using React, Supabase and Deno.
     </p>
     <Resume />
   </div>
