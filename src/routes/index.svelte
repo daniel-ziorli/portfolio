@@ -80,7 +80,7 @@
       description: `Created a chrome extension that allows users to automatically fill forms using a hotkey.
       Add any context or personal information and the extension will use it to fill out inputs, select dropdown values, check checkboxes and click radio buttons.
       `,
-      href: 'https://github.com/daniel-ziorli/browser-chat',
+      href: 'https://github.com/daniel-ziorli/auto-fill-browser',
       src: '/projects/browser_chat.gif',
       newtab: true,
       pills: ['Chrome Extension API', 'React', 'Gemini', 'Javascript', 'Tailwind']
