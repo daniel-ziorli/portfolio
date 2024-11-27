@@ -7,7 +7,7 @@
 
   <div class="hero-text">
     <p>
-      A multidisciplinary developer with a passion for creating clean code and amazing experiences
+      A multidisciplinary developer who loves solving problems and making things with code
     </p>
   </div>
 
