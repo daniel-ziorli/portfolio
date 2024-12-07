@@ -9,10 +9,29 @@
   import Socials from '../components/Socials.svelte';
   import Resume from '../components/Resume.svelte';
   import { onMount } from 'svelte';
+  import Pills from '../components/Pills.svelte';
 
+  let pills = ['typescript', 'react', 'node.js', 'mongodb', 'three.js', 'jitsi', 'figma', 'aws'];
   let workExperience = [
     {
-      title: 'Tulip',
+      title: 'Veerum',
+      type: 'Full Time',
+      description:
+        'Developed integrations for 10+ services, integrating 500,000+ objects daily. Architected new standards reducing deployment time by 97%.',
+      date: 'AUG 2022 - AUG 2024',
+      pills: ['typescript', 'react', 'node.js', 'mongodb', 'three.js']
+    },
+    {
+      title: 'Sadicon Labs',
+      type: 'Contractor',
+      description:
+        'Led the development of a virtual receptionist web app for storage facilities. Used jitsi for video conferencing and react for facility management.',
+      date: 'MAY 2021 - AUG 2021',
+      pills: ['typescript', 'react', 'jitsi', 'figma', 'aws']
+    },
+    {
+      title: 'Tulip ',
+      type: 'Internship',
       description:
         'Developed tooling to creating and managing docker based applications and tooling for creating and managing client infrastructure.',
       href: 'tulip',
@@ -21,14 +40,16 @@
     },
     {
       title: 'WSIB',
+      type: 'Internship',
       description:
         'Created a flutter app for scheduling in person meetings and contact trace employees who participated.',
       href: 'wsib',
       date: 'MAY 2020 - AUG 2020',
-      pills: ['react', 'aws', 'flutter']
+      pills: ['flutter', 'node.js', 'aws']
     },
     {
       title: 'TD Lab',
+      type: 'Internship',
       description:
         'Worked as a full stack developer to create various prototypes such as a student investment app.',
       href: 'td',
@@ -37,6 +58,7 @@
     },
     {
       title: 'Orion',
+      type: 'Internship',
       description:
         'Used python and Arbor Ddos protection technology to create comprehensive email alerts and reports.',
       href: 'orion',
@@ -46,6 +68,14 @@
   ];
 
   let projects = [
+    {
+      title: 'Project Impulse',
+      description:
+        'Developing a Multiplayer VR shooter in unity for Steam and Oculus. It features a physics based climbing system, mod support, voice chat, accurate networked physics simulation, cross platform support and so much more!',
+      href: '/vrgame',
+      src: '/projects/vr.gif',
+      pills: ['Unity', 'C#', 'Mirror', 'Addressables', 'Mod.io', 'Blender', 'Linode']
+    },
     {
       title: 'LLM Text Adventure',
       description:
@@ -64,6 +94,14 @@
         'Typescript',
         'Tailwind'
       ]
+    },
+    {
+      title: 'CSGO Hack',
+      description:
+        'Hacked csgo with python. Used pymem to read memory to display/modify the game state with pyQt5 and win32gui. Tool features recoil control, aimbot, trigger bot, auto bhop, wall hacks, and radar. Each feature runs on a thread to prevent in-game performance loss.',
+      href: '',
+      src: '/projects/csgo.gif',
+      pills: ['Python', 'pyQt5', 'pymem', 'win32gui', 'multithreading']
     },
     {
       title: 'Meh Window Manager',
@@ -96,22 +134,6 @@
       pills: ['Chrome Extension API', 'React', 'Gemini', 'Javascript', 'Tailwind']
     },
     {
-      title: 'Project Impulse',
-      description:
-        'Developing a Multiplayer VR shooter in unity for Steam and Oculus. It features a physics based climbing system, mod support, voice chat, accurate networked physics simulation, cross platform support and so much more!',
-      href: '/vrgame',
-      src: '/projects/vr.gif',
-      pills: ['Unity', 'C#', 'Mirror', 'Addressables', 'Mod.io', 'Blender', 'Linode']
-    },
-    {
-      title: 'CSGO Hack',
-      description:
-        'Hacked csgo with python. Used pymem to read memory to display/modify the game state with pyQt5 and win32gui. Tool features recoil control, aimbot, trigger bot, auto bhop, wall hacks, and radar. Each feature runs on a thread to prevent in-game performance loss.',
-      href: '',
-      src: '/projects/csgo.gif',
-      pills: ['Python', 'pyQt5', 'pymem', 'win32gui', 'multithreading']
-    },
-    {
       title: 'Productive Youtube',
       description:
         'Created a chrome extension to change video speeds past the 2x cap, disables the home page and disable comments to have a more productive youtube experience.',
@@ -136,31 +158,52 @@
 <div id="home" />
 <Hero />
 
-<div id="about" />
-<Wave svg="waves/black-purple.svg" />
-<div class="purple">
-  <div class="content about">
+<div id="about" style="height: 100px; margin-top: -100px;" />
+<div style="margin-inline: 10px;">
+  <div class="about-container about">
     <div class="about-header">
-      <h1 style="align-self: left; margin-right: auto;">ABOUT<Blink>_</Blink></h1>
-      <div style="align-self: right;">
+      <h1 style="flex: 1; margin:0px; font-size: 2rem; color: var(--yellow)">
+        ABOUT<Blink>_</Blink>
+      </h1>
+      <div style="">
         <Socials />
       </div>
     </div>
-    <p>
-      Hello! My name is Daniel and I enjoy solving problems with tech. My interest in programming
-      started back in 2013 when I decided to create my smash hit indie game. As it turns out
-      programming is hard and game development is even harder.
+    <p class="about-blurb">
+      2 years of professional experience in full stack development with a focus on backend.
     </p>
-    <p>
-      Fast-forward to today, and I've had experience working at companies such as Veerum, TD and
-      WSIB doing full stack development. I've had the pleasure of working on tooling at Tulip and
-      networking at ORION. Personally I have been working on a multiplayer llm text adventure game
-      using React, Supabase and Deno.
-    </p>
+    <div class="about-skills">
+      <h1 style="align-self: left; margin:0px; font-size: 1.5rem; min-width: 140px;">Languages</h1>
+      <Pills pills={['Typescript', 'Python', 'C#', 'Golang']} />
+    </div>
+    <div class="about-skills">
+      <h1 style="align-self: left; margin:0px; font-size: 1.5rem; min-width: 140px;">Backend</h1>
+      <Pills pills={['Node.js', 'Deno', 'ETL Pipelines', 'FastAPI']} />
+    </div>
+    <div class="about-skills">
+      <h1 style="align-self: left; margin:0px; font-size: 1.5rem; min-width: 140px;">Databases</h1>
+      <Pills pills={['Postgres', 'MongoDB', 'Supabase', 'Redis']} />
+    </div>
+    <div class="about-skills">
+      <h1 style="align-self: left; margin:0px; font-size: 1.5rem; min-width: 140px;">Frontend</h1>
+      <Pills pills={['React', 'Tailwind', 'Zustand', 'Redux']} />
+    </div>
+    <div class="about-skills">
+      <h1 style="align-self: left; margin:0px; font-size: 1.5rem; min-width: 140px;">Tools</h1>
+      <Pills pills={['Git', 'Docker', 'Figma', 'Blender']} />
+    </div>
+    <div style="height: 10px;" />
     <Resume />
   </div>
 </div>
-<Wave svg="waves/black-purple.svg" flip={true} />
+
+<div id="experience" />
+<ScrollingTitle margin="3rem" text="Experience " />
+<div
+  style="display: flex; justify-content:center; align-items: center; margin-right: auto; margin-left: auto; width:100%;"
+>
+  <CardContainer cards={workExperience} />
+</div>
 
 <div id="projects" />
 <ScrollingTitle margin="3rem" text="Projects " />
@@ -169,20 +212,8 @@
   <ProjectContainer tiles={projects} />
 </div>
 
-<div id="experience" />
-<ScrollingTitle margin="3rem" text="Experience " />
-<div
-  style="display: flex; justify-content:center; align-items: center; margin-right: auto; margin-left: auto; width:100%"
->
-  <CardContainer cards={workExperience} />
-</div>
-
 <style>
-  .content {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .content {
+  .about-container {
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
@@ -190,6 +221,18 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    padding-inline: 40px;
+    padding-block: 15px;
+    padding-bottom: 35px;
+    max-width: 800px;
+    background-color: #17141d;
+    border-radius: 16px;
+  }
+  @media only screen and (max-width: 800px) {
+    .about-container {
+      padding-inline: 20px;
+      background-color: var(--background-color);
+    }
   }
   h1 {
     font-size: 2rem;
@@ -200,14 +243,40 @@
     font-size: 1.3rem;
     font-weight: normal !important;
   }
-  .about {
-    max-width: 800px;
-  }
+
   .about-header {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
   }
+  .about-skills {
+    display: flex;
+    align-items: center;
+    padding-block: 10px;
+    flex-direction: row;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .about-skills {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+  }
+  .about-blurb {
+    margin-bottom: 0px;
+    font-size: 1rem;
+    width: 70%;
+    margin-top: -5px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .about-blurb {
+      width: 100%;
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+  }
+
   .purple {
     background-color: var(--purple, purple);
     width: 100%;

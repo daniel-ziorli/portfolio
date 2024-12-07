@@ -8,7 +8,12 @@
   export let newtab = false;
 </script>
 
-<a href={href === '' ? 'javascript:void(0)' : href} title={href} target={newtab === true ? 'target=_blank' : ''} rel="noopener noreferrer">
+<a
+  href={href === '' ? 'javascript:void(0)' : href}
+  title={href}
+  target={newtab === true ? 'target=_blank' : ''}
+  rel="noopener noreferrer"
+>
   <section>
     <div class="image" style="background-image: url({src}); background-position: {alignment};" />
     <div class="tile">
@@ -42,7 +47,7 @@
     margin: 1rem;
     margin-left: auto;
     margin-right: auto;
-    transition: .2s;
+    transition: 0.2s;
   }
   section:hover {
     transform: translateX(10px) translateY(-10px);

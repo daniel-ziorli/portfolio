@@ -80,8 +80,8 @@
   <nav>
     <a href="/#home" class="left"><h1>DZ</h1></a>
     <a href="/#about"><h1>ABOUT</h1></a>
-    <a href="/#projects"><h1>PROJECTS</h1></a>
     <a href="/#experience"><h1>EXPERIENCE</h1></a>
+    <a href="/#projects"><h1>PROJECTS</h1></a>
     <a href={variables.resumePath ? variables.resumePath.toString() : ''}><h1>RESUME</h1></a>
   </nav>
 </div>
@@ -112,14 +112,14 @@
       <h1>ABOUT</h1>
     </div>
   </a>
-  <a href="/#projects">
-    <div class="mobile-button">
-      <h1>PROJECTS</h1>
-    </div>
-  </a>
   <a href="/#experience">
     <div class="mobile-button">
       <h1>EXPERIENCE</h1>
+    </div>
+  </a>
+  <a href="/#projects">
+    <div class="mobile-button">
+      <h1>PROJECTS</h1>
     </div>
   </a>
   <a href={variables.resumePath ? variables.resumePath.toString() : ''}>

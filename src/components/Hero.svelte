@@ -3,16 +3,15 @@
 </script>
 
 <div class="hero-container">
-  <h1>Hey, I'm </h1><h1>Daniel.👋</h1>
+  <h1>Hey, I'm</h1>
+  <h1>Daniel.👋</h1>
 
   <div class="hero-text">
-    <p>
-      A multidisciplinary developer who loves solving problems and making things with code
-    </p>
+    <p>A Software Engineer specializing in full stack development based in Toronto, Canada.</p>
   </div>
 
   <div class="blob">
-    <Blob color="#7952b3"/>
+    <Blob color="#7952b3" />
   </div>
 </div>
 

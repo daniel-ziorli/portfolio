@@ -4,7 +4,6 @@
 </script>
 
 <div>
-  <h1>I'd love to chat!</h1>
   <h2>
     contact me at <a href="mailto:daniel.ziorli@gmail.com?subject=Hi!">daniel.ziorli@gmail.com</a>
   </h2>
@@ -26,7 +25,7 @@
     color: var(--yellow, yellow);
   }
   div {
-    width: 100vw;
+    width: 100%;
     height: 300px;
     display: flex;
     flex-direction: column;

@@ -1,32 +1,32 @@
 <script lang="ts">
   import IconButton from './IconButton.svelte';
+  import Pills from './Pills.svelte';
 
   export let title;
   export let description;
   export let href;
   export let date;
+  export let type;
   export let pills;
 </script>
 
 <article class="card no-select">
   <header>
-    <p>{date}</p>
-    <h1>{title}</h1>
+    <h1 style="margin-bottom: 0px">{title}</h1>
+    <p style="margin-bottom: 0px; margin-top: 4px;">{date}</p>
+    <p style="margin-top: 2px; margin-bottom: 0px;">{type}</p>
     <h2>{description}</h2>
   </header>
 
-  <footer >
-      <p style="border: transparent; justify-self: flex-start">skills</p>
-      <div style="display: flex; flex: 1; width: 100%;">
-        <div class="pills">
-          {#each pills as pill}
-            <p>{pill}</p>
-          {/each}
-        </div>
-        <div class="arrow"><IconButton href={href} size={32} src="icons/arrow.png"/></div>
-      </div>
+  <footer>
+    <p style="border: transparent; justify-self: flex-start">skills</p>
+    <div style="display: flex; flex: 1; width: 100%;">
+      <Pills {pills} />
+      {#if href !== '' && href !== undefined}
+        <div class="arrow"><IconButton {href} size={32} src="icons/arrow.png" /></div>
+      {/if}
+    </div>
   </footer>
-  
 </article>
 
 <style>
@@ -34,11 +34,11 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    height: 350px;
+    height: 380px;
     width: 250px;
     min-width: 250px;
     padding: 1.5rem;
-    
+
     border-radius: 16px;
     background: #17141d;
     box-shadow: 1rem 0 3rem #0e0e0eb7;
@@ -75,22 +75,11 @@
   }
 
   footer p {
-    font-size: .8rem;
+    font-size: 0.8rem;
     border: 2px solid grey;
     padding: 5px;
     margin: 5px;
     border-radius: 10px;
-  }
-
-  .pills {
-    align-self: flex-start;
-    justify-self: center;
-    align-items: center;
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    padding-right: 0.1rem;
-    width: 100%;
   }
 
   .arrow {

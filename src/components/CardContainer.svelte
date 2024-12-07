@@ -13,11 +13,10 @@
     mouseDown = true;
     startX = e.pageX - container.offsetLeft;
     scrollLeft = container.scrollLeft;
-    e.target.scrollIntoView({behavior: "smooth",inline: "center"})
-    setTimeout(function () {
-      e.target.scrollIntoView({behavior: "smooth",inline: "center"})
-    }, 110);
-
+    e.target.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    // setTimeout(function () {
+    //   e.target.scrollIntoView({ behavior: 'smooth', inline: 'center' });
+    // }, 110);
   }
 
   function handleMouseUp(e) {
@@ -33,10 +32,9 @@
 
   function select(e, i) {
     console.log(container);
-    
+
     currentlyClicked = i;
   }
-
 </script>
 
 <section class="card-container" bind:this={container}>
@@ -56,16 +54,14 @@
         {i == cards.length - 1 && currentlyClicked != -1 ? 'last' : ''}
         {i == 0 && currentlyClicked != -1 ? 'first' : ''}
       "
-      style="z-index: {Math.round(1000/(i+1))};"
+      style="z-index: {Math.round(1000 / (i + 1))};"
     >
-      <Card {...c}/>
+      <Card {...c} />
     </div>
   {/each}
 </section>
 
-<div>
-
-</div>
+<div />
 
 <style>
   .card-container {
@@ -79,14 +75,13 @@
     scrollbar-width: none;
   }
 
-
   .card {
     overflow-y: visible;
     transition: 0.1s;
   }
 
   .selected {
-    transform: translatey(-1rem);
+    transform: translateY(-1rem);
   }
 
   .shift-right {
