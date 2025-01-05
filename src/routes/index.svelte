@@ -69,6 +69,14 @@
 
   let projects = [
     {
+      title: 'up2speed',
+      description:
+        'Tool for reducing developer onboarding time by semantically searching the code base for the most relevant code snippets.',
+      href: 'https://github.com/daniel-ziorli/up2speed',
+      src: '/projects/up2speed.gif',
+      pills: ['Next.js', 'Weaviate', 'Tailwind', 'Typescript', 'Embeddings', 'OpenAI']
+    },
+    {
       title: 'Project Impulse',
       description:
         'Developing a Multiplayer VR shooter in unity for Steam and Oculus. It features a physics based climbing system, mod support, voice chat, accurate networked physics simulation, cross platform support and so much more!',
